@@ -90,6 +90,9 @@ public class SuggestedRecipesActivity extends AppCompatActivity {
                 finish();
                 return true;
             } else if (itemId == R.id.nav_settings) {
+                startActivity(new Intent(SuggestedRecipesActivity.this, SettingsActivity.class));
+                overridePendingTransition(0, 0);
+                finish();
                 return true;
             }
             return false;

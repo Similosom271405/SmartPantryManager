@@ -116,7 +116,9 @@ public class PantryActivity extends AppCompatActivity {
                 finish();
                 return true;
             } else if (itemId == R.id.nav_settings) {
-                Toast.makeText(this, "Settings will be activated in Commit 11", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(PantryActivity.this, SettingsActivity.class));
+                overridePendingTransition(0, 0);
+                finish();
                 return true;
             }
             return false;
