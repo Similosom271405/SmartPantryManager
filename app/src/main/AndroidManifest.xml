@@ -29,4 +29,7 @@
             android:parentActivityName=".ui.PantryActivity" />
 
     </application>
+    <activity
+        android:name=".ui.SuggestedRecipesActivity"
+        android:exported="false" />
 </manifest>
