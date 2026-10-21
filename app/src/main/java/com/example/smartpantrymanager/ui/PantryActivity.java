@@ -111,13 +111,15 @@ public class PantryActivity extends AppCompatActivity {
             if (itemId == R.id.nav_pantry) {
                 return true;
             } else if (itemId == R.id.nav_recipes) {
-                startActivity(new Intent(this, SuggestedRecipesActivity.class));
+                startActivity(new Intent(PantryActivity.this, SuggestedRecipesActivity.class));
                 overridePendingTransition(0, 0);
                 finish();
                 return true;
             } else if (itemId == R.id.nav_settings) {
+                Toast.makeText(this, "Settings will be activated in Commit 11", Toast.LENGTH_SHORT).show();
                 return true;
             }
             return false;
         });
     }
+}
