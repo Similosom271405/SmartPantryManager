@@ -32,4 +32,8 @@
     <activity
         android:name=".ui.SuggestedRecipesActivity"
         android:exported="false" />
+    <activity
+        android:name=".ui.RecipeDetailActivity"
+        android:exported="false"
+        android:parentActivityName=".ui.SuggestedRecipesActivity" />
 </manifest>
